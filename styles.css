@@ -49,11 +49,27 @@ header img {
   padding: 30px;
   display: flex;
   flex-direction: column;
+  height: 400px;
+  justify-content: center;
+}
+
+#contenedor-descripcion .contenido{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #contenedor-descripcion .titulo{
   font-size: 30px;
   margin-bottom: 30px;
-  height: 400px;
-  background-color: blue;
+}
+
+#contenedor-descripcion #texto-uno {
+  padding-right: 20px;
+}
+
+#contenedor-descripcion img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
 }
