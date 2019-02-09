@@ -1,7 +1,14 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header {
@@ -14,6 +21,19 @@ header img {
   height: 50px;
   width: auto;
   margin: 10px;
+}
+
+section {
+  max-width: 900px;
+  align-self: center;
+  min-height: 300px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
 }
 
 #contenedor-saludo {
@@ -49,7 +69,6 @@ header img {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  height: 400px;
   justify-content: center;
 }
 
@@ -59,17 +78,47 @@ header img {
   align-items: center;
 }
 
-#contenedor-descripcion .titulo{
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-#contenedor-descripcion #texto-uno {
-  padding-right: 20px;
-}
-
 #contenedor-descripcion img {
-  width: 50%;
+  width: 30vw;
   height: auto;
   border-radius: 10px;
+  margin: 30px;
+}
+
+.producto {
+  width: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.producto img {
+  max-height: 100px;
+  margin: 20px;
+}
+
+.blac {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+  #contenedor-descripcion {
+    padding: 0;
+  }
+  #contenedor-descripcion .contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  #contenedor-descripcion img {
+    margin: 30px;
+    width: 60vw;
+  }
 }
