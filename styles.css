@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+  margin: 10px;
+}
+
+#contenedor-saludo {
+  background-image: url("saludo-bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contenedor-saludo button {
+  background-color: white;
+  border: solid 1px white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#contenedor-descripcion {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contenedor-descripcion .titulo{
+  font-size: 30px;
+  margin-bottom: 30px;
+  height: 400px;
+  background-color: blue;
+}
